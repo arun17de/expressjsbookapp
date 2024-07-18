@@ -2,10 +2,9 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Middleware to parse JSON bodies
 app.use(express.json());
 
-// Dummy data - in-memory array
+// in-memory array
 let books = [
     { id: 1, title: 'Book 1', author: 'Author 1', year: 2020 },
     { id: 2, title: 'Book 2', author: 'Author 2', year: 2021 },
